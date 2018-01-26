@@ -1,0 +1,138 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+.markup {
+  margin-bottom: 2em;
+}
+
+.markup div {
+  border: 1px solid;
+  padding: 0 1em;
+}
+
+.emoji {
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+/* Your code here */
+.inlineblock__item {
+
+}
+
+.float__item {
+
+}
+
+.flexbox {
+
+}
+
+.flexbox__item {
+
+}
+
+
+.grid1 {
+  display: grid;
+  grid-template-columns: [apple-start] 150px [apple-end
+    banana-start] 350px [banana-end
+    cucumber-start] 150px [cucumber-end];
+  grid-template-rows: 100px 100px;
+  grid-gap: 1em;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-areas:
+    'a . . .'
+    'a b b c'
+    '. b b c';
+}
+
+.grid2 .a {
+  background: red;
+  grid-area: a;
+}
+.grid2 .b {
+  background: blue;
+  grid-area: b;
+}
+.grid2 .c {
+  background: #BADA55;
+  grid-area: c;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 300px 300px;
+}
+
+.grid4 {
+  display: grid;
+  /* minimum width is 200px, if more than 200px, take all the free space */
+  grid-template-columns: minmax(200px, 1fr) 300px 300px;
+}
+
+.grid5 {
+  display: grid;
+  grid-template-columns: repeat(4, 75px 120px);
+}
+
+.grid6 {
+  border: 10px solid red;
+  display: grid;
+  /*grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));*/
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.grid7 {
+
+}
+
+
+.grid8 {
+  border: 10px solid red;
+  display: grid;
+  grid-template-columns: repeat(6, 4em);
+  grid-template-rows: repeat(6, 4em);
+}
+
+.grid8__item {
+  background: slateblue !important;
+}
+
+.grid8__item:nth-child(1) {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.grid8__item:nth-child(3) {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.grid8__item:nth-child(4) {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+.grid9 {
+
+}

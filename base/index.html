@@ -1,0 +1,308 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CSS Grid workshop @ JSConf.Asia 2018</title>
+  <meta name="description" content="Blank HTML template for CSS Grid workshop">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Grid is the new black</h1>
+  </header>
+  <main>
+    <section>
+      <h2>0. Layouts before Grid</h2>
+      <p>Examines use of <code>display: inline-block</code>, <code>float</code> and <code>display: flex</code>.</p>
+
+      <h3><code>inline-block</code> technique</h3>
+      <div class="markup inlineblock">
+        <div class="inlineblock__item"><p>Item A</p></div><div class="inlineblock__item"><p>Item B</p></div><div class="inlineblock__item"><p>Item C</p></div><div class="inlineblock__item"><p>Item D</p></div><div class="inlineblock__item"><p>Item E</p></div><div class="inlineblock__item"><p>Item F</p></div>
+      </div>
+
+      <h3><code>float</code> technique</h3>
+      <div class="markup float">
+        <div class="float__item">
+          <p>Item A</p>
+        </div>
+        <div class="float__item">
+          <p>Item B</p>
+        </div>
+        <div class="float__item">
+          <p>Item C</p>
+        </div>
+        <div class="float__item">
+          <p>Item D</p>
+        </div>
+        <div class="float__item">
+          <p>Item E</p>
+        </div>
+        <div class="float__item">
+          <p>Item F</p>
+        </div>
+      </div>
+
+      <h3><code>flexbox</code> technique</h3>
+      <div class="markup flexbox">
+        <div class="flexbox__item">
+          <p>Item A</p>
+        </div>
+        <div class="flexbox__item">
+          <p>Item B</p>
+        </div>
+        <div class="flexbox__item">
+          <p>Item C</p>
+        </div>
+        <div class="flexbox__item">
+          <p>Item D</p>
+        </div>
+        <div class="flexbox__item">
+          <p>Item E</p>
+        </div>
+        <div class="flexbox__item">
+          <p>Item F</p>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>1.1 Defining a grid</h2>
+      <p>Covers <code>grid-template-columns</code>, <code>grid-template-rows</code> and <code>grid-gap</code>.</p>
+
+      <div class="markup grid1">
+        <div class="grid1__item">
+          <p>Item A</p>
+        </div>
+        <div class="grid1__item">
+          <p>Item B</p>
+        </div>
+        <div class="grid1__item">
+          <p>Item C</p>
+        </div>
+        <div class="grid1__item">
+          <p>Item D</p>
+        </div>
+        <div class="grid1__item">
+          <p>Item E</p>
+        </div>
+        <div class="grid1__item">
+          <p>Item F</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>1.2 Naming grid areas</h2>
+
+      <div class="markup grid2">
+        <div class="grid2__item a">
+          <p>Item A</p>
+        </div>
+        <div class="grid2__item b">
+          <p>Item B</p>
+        </div>
+        <div class="grid2__item c">
+          <p>Item C</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>1.3 The <code>fr</code> unit</h2>
+
+      <div class="markup grid3">
+        <div class="grid3__item">
+          <p>Item A</p>
+        </div>
+        <div class="grid3__item">
+          <p>Item B</p>
+        </div>
+        <div class="grid3__item">
+          <p>Item C</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>1.4 The <code>minmax()</code> function</h2>
+
+      <div class="markup grid4">
+        <div class="grid4__item">
+          <p>Item A</p>
+        </div>
+        <div class="grid4__item">
+          <p>Item B</p>
+        </div>
+        <div class="grid4__item">
+          <p>Item C</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>1.5 The <code>repeat()</code> function</h2>
+
+      <div class="markup grid5">
+        <div class="grid5__item">
+          <p>Item</p>
+        </div>
+        <div class="grid5__item">
+          <p>Item</p>
+        </div>
+        <div class="grid5__item">
+          <p>Item</p>
+        </div>
+        <div class="grid5__item">
+          <p>Item</p>
+        </div>
+        <div class="grid5__item">
+          <p>Item</p>
+        </div>
+        <div class="grid5__item">
+          <p>Item</p>
+        </div>
+        <div class="grid5__item">
+          <p>Item</p>
+        </div>
+        <div class="grid5__item">
+          <p>Item</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>1.6 <code>auto-fill</code> versus <code>auto-fit</code></h2>
+
+      <div class="markup grid6">
+        <div class="grid6__item">
+          <p>Item A</p>
+        </div>
+        <div class="grid6__item">
+          <p>Item B</p>
+        </div>
+        <div class="grid6__item">
+          <p>Item C</p>
+        </div>
+        <div class="grid6__item">
+          <p>Item D</p>
+        </div>
+        <div class="grid6__item">
+          <p>Item E</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>1.7 Altogether now</h2>
+
+      <div class="markup grid7">
+        <div class="grid7__item">
+          <p>Item</p>
+        </div>
+        <div class="grid7__item">
+          <p>Item</p>
+        </div>
+        <div class="grid7__item">
+          <p>Item</p>
+        </div>
+        <div class="grid7__item">
+          <p>Item</p>
+        </div>
+        <div class="grid7__item">
+          <p>Item</p>
+        </div>
+        <div class="grid7__item">
+          <p>Item</p>
+        </div>
+        <div class="grid7__item">
+          <p>Item</p>
+        </div>
+        <div class="grid7__item">
+          <p>Item</p>
+        </div>
+        <div class="grid7__item">
+          <p>Item</p>
+        </div>
+        <div class="grid7__item">
+          <p>Item</p>
+        </div>
+        <div class="grid7__item">
+          <p>Item</p>
+        </div>
+        <div class="grid7__item">
+          <p>Item</p>
+        </div>
+        <div class="grid7__item">
+          <p>Item</p>
+        </div>
+        <div class="grid7__item">
+          <p>Item</p>
+        </div>
+        <div class="grid7__item">
+          <p>Item</p>
+        </div>
+      </div>
+
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>2.1 <code>grid-column</code> and <code>grid-row</code></h2>
+
+      <div class="markup grid8">
+        <div class="grid8__item">
+          <p class="emoji">🍏</p>
+        </div>
+        <div class="grid8__item">
+          <p class="emoji">🍊</p>
+        </div>
+        <div class="grid8__item">
+          <p class="emoji">🥥</p>
+        </div>
+        <div class="grid8__item">
+          <p class="emoji">🥑</p>
+        </div>
+        <div class="grid8__item">
+          <p class="emoji">🍇</p>
+        </div>
+        <div class="grid8__item">
+          <p class="emoji">🍌</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>2.2 <code>grid-area</code></h2>
+
+      <div class="markup grid9">
+        <div class="grid9__item">
+          <p>Item A</p>
+        </div>
+        <div class="grid9__item">
+          <p>Item B</p>
+        </div>
+        <div class="grid9__item">
+          <p>Item C</p>
+        </div>
+      </div>
+
+    </section>
+
+</body>
+
+</html>
