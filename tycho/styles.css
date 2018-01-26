@@ -69,6 +69,7 @@ a {
 img {
   width: 100%;
   height: 100%;
+  /* it makes img to behave like background image */
   -o-object-fit: cover;
   object-fit: cover;
 }
